@@ -7,10 +7,11 @@ tres = input("> Ahora, introduce tres letras de tu elección, separadas por un e
 
 # 1.	¿Cuántas veces aparece cada una de las letras que eligió? Para lograr esto, puedes almacenar esas letras en una lista y luego usar algún método propio de string que permita contar cuántas veces aparece un substring dentro del string. Ten en cuenta que al buscar las letras puede haber mayúsculas y minúsculas, y esto afecta al resultado. Hay métodos que pasan letras a minúsculas o mayúsculas.
 
-lista = tres.split()
-letra0 = texto.count(lista[0])
-letra1 = texto.count(lista[1])
-letra2 = texto.count(lista[2])
+texto2 = texto.lower()
+lista = tres.lower().split()
+letra0 = texto2.count(lista[0])
+letra1 = texto2.count(lista[1])
+letra2 = texto2.count(lista[2])
 
 print(f"\n> Te daré algunas estadísticas.\n\n[1] Frecuencia de las letras. \n> La letra {lista[0]} aparece un total de {letra0} veces en tu texto.\n> La letra {lista[1]} aparece un total de {letra1} veces en tu texto.\n> La letra {lista[2]} aparece un total de {letra2} veces en tu texto.\n\n")
 
